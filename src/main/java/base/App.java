@@ -22,5 +22,12 @@ Modify this program so that instead of prompting for quotes from the user, you c
 */
 
 public class App {
-
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("What is the quote? ");
+        String quote = in.nextLine();
+        System.out.print("Who said it? ");
+        String name = in.nextLine();
+        System.out.println(name + " says, " + "\"" + (quote) + "\"");
+    }
 }
